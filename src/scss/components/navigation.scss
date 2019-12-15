@@ -1,0 +1,26 @@
+.navigation {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+  }
+
+  &__item {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid #52c2f5;
+    cursor: pointer;
+  }
+
+  &__item--active {
+    background-color: #058cca;
+  }
+}

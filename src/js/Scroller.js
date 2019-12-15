@@ -2,7 +2,8 @@ class Scroller {
   constructor(rootElement) {
     this.rootElement = document.querySelector(rootElement);
     this.sections = [...this.rootElement.querySelectorAll('section')];
-    this.currectSectionIndex = this.sections.findIndex(el => this.isScrolledIntoView(el));
+    const currectSectionIndex = this.sections.findIndex(el => this.isScrolledIntoView(el));
+    this.currectSectionIndex = Math.max(currectSectionIndex, 0);
     this.isThrottled = false;
     this.isScrolledIntoView(this.sections[0]);
     this.drawNavigation();
@@ -24,7 +25,7 @@ class Scroller {
 
     setTimeout(() => (this.isThrottled = !this.isThrottled), 700);
 
-    const direction = e.wheelDelta < 0 ? 1 : -1;
+    const direction = e.deltaY < 0 ? -1 : 1;
     this.scroll(direction);
   };
 

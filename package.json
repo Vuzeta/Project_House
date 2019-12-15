@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Vuzeta/Project_House/issues"
   },
-  "homepage": "https://github.com/Vuzeta/Project_House#readme",
+  "homepage": "https://vuzeta.github.io/Project_House/",
   "browserslist": "> 0.5%",
   "devDependencies": {
     "@babel/cli": "^7.6.4",

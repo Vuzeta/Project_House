@@ -3,24 +3,25 @@
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
+  z-index: 999999;
 
   &__list {
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 130px;
+    height: 110px;
   }
 
   &__item {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    border: 3px solid #52c2f5;
+    border: 3px solid $color-blue-light;
     cursor: pointer;
   }
 
   &__item--active {
-    background-color: #058cca;
+    background-color: $color-blue-dark;
   }
 }

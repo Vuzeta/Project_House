@@ -2,8 +2,7 @@
 @import './utils/mixins';
 @import './utils/variables';
 
-@import './components/navigation';
-
+@import './components/swiper-pagination';
 @import './layout/presentation';
 
 * {
@@ -13,15 +12,22 @@
 }
 
 html {
-  overflow: hidden;
   font-size: $html-font;
 }
 
 body {
   font-family: $font-primary;
+  overflow:hidden;
 }
 
-section {
+html,body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }

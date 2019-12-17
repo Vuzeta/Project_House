@@ -8,25 +8,29 @@
     <title>House Project</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
 </head>
 
 <body>
-    <main id="root">
-        <section class="presentation">
-            <div class="presentation__logo"></div>
-            <h1 class="presentation__title">Leading Excellence in Residential Custom Home Building</h1>
-            <a href="#" class="presentation__btn">Learn More</a>
-        </section>
-        <section>
-            <h1>Siema 2</h1>
-        </section>
-        <section>
-            <h1>Siema 3</h1>
-        </section>
-        <section>
-            <h1>Siema 4</h1>
-        </section>
-    </main>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <section class="swiper-slide presentation parallax-bg">
+                <div class="presentation__wrapper">
+                    <div class="presentation__logo" data-swiper-parallax-y="-100%"></div>
+                    <h1 class="presentation__title" data-swiper-parallax-y="-100%">Leading Excellence in Residential
+                        Custom Home Building</h1>
+                    <a href="#" class="presentation__btn" data-swiper-parallax-y="-100%">Learn More</a>
+                </div>
+            </section>
+            <section class="swiper-slide">Slide 2</section>
+            <section class="swiper-slide">Slide 3</section>
+            <section class="swiper-slide">Slide 4</section>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.0/js/swiper.min.js"></script>
 </body>
 
 </html>

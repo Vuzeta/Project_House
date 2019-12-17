@@ -4,6 +4,7 @@
 
 @import './components/swiper-pagination';
 @import './layout/presentation';
+@import './layout/home';
 
 * {
   margin: 0;
@@ -17,10 +18,11 @@ html {
 
 body {
   font-family: $font-primary;
-  overflow:hidden;
+  overflow: hidden;
 }
 
-html,body {
+html,
+body {
   position: relative;
   height: 100%;
 }

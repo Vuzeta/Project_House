@@ -2,9 +2,9 @@
 @import './utils/mixins';
 @import './utils/variables';
 
-@import './components/swiper-pagination';
 @import './layout/presentation';
 @import './layout/home';
+@import './layout/monochrome';
 
 * {
   margin: 0;
@@ -34,17 +34,13 @@ body {
   margin-right: auto;
 }
 
-.monochrome__container {
-  position: relative;
-  top: 0;
-  left: 0;
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid $color-blue-light;
 }
 
-.monochrome__pagination {
-  position: absolute;
-    z-index: 2;
-    bottom: 10px !important;
-    text-align: center;
-    left: 50% !important;
-    transform: translateX(-50%);
+.swiper-pagination-bullet-active {
+  background-color: $color-blue-dark;
 }

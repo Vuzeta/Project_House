@@ -9,7 +9,8 @@ const swiper = new Swiper('.s1', {
   keyboardControl: true,
   touchControl: false,
   parallax: true,
-  speed: 600,
+  speed: 1400,
+  followFinger: false,
 });
 
 const mySwiper2 = new Swiper('.s2', {

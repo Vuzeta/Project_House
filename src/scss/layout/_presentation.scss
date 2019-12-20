@@ -1,5 +1,5 @@
 .presentation {
-  background: url('../assets/hero_1280.jpg') center center/cover no-repeat;
+  background: url('../assets/hero_1920.jpg') center center/cover no-repeat;
 
   &::after {
     content: '';
@@ -29,6 +29,11 @@
     width: 260px;
     height: 58px;
     background: url('../assets/logo.svg') center center/cover no-repeat;
+
+    @include mq(medium) {
+      width: 360px;
+      height: 80px;
+    }
   }
 
   &__title {
@@ -41,6 +46,12 @@
     color: $color-white;
     text-align: center;
     letter-spacing: -1px;
+
+    @include mq(medium) {
+      width: 500px;
+      font-size: $font-size-XXLarge + 0.5em;
+      line-height: 57px;
+    }
   }
 
   &__btn {
@@ -50,5 +61,10 @@
     text-transform: uppercase;
     padding: 15px;
     border: 2px solid $color-white;
+
+    @include mq(medium) {
+      margin-bottom: 200px;
+      font-size: $font-size-medium-large;
+    }
   }
 }

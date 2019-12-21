@@ -13,6 +13,11 @@
     text-align: center;
     color: $color-gray-light;
     background-color: white;
+
+    @include mq(medium) {
+      padding: 50px 40px;
+      font-size: $font-size-medium-large;
+    }
   }
 
   &__list {
@@ -21,6 +26,10 @@
     flex-direction: column;
     justify-content: space-between;
     list-style: none;
+
+    @include mq(medium) {
+      height: 200px;
+    }
   }
 
   &__list-title {
@@ -29,6 +38,10 @@
     color: $color-white;
     text-align: center;
     margin-bottom: 10px;
+
+    @include mq(medium) {
+      font-size: $font-size-large;
+    }
   }
 
   &__item {
@@ -39,11 +52,19 @@
     font-size: $font-size-medium-small;
     text-decoration: none;
     color: $color-gray-light;
+
+    @include mq(medium) {
+      font-size: $font-size-medium-large;
+    }
   }
 
   &__copy {
     font-size: $font-size-small;
     color: $color-gray-light;
     margin-bottom: 8px;
+
+    @include mq(medium) {
+      font-size: $font-size-medium;
+    }
   }
 }

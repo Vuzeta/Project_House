@@ -15,6 +15,10 @@
     line-height: $line-height-normal;
     text-transform: uppercase;
 
+    @include mq(medium) {
+      font-size: $font-size-XXLarge + 0.5em;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -33,24 +37,34 @@
     font-size: $font-size-medium-small;
     font-weight: $font-weight-light;
     line-height: 25px;
+    margin-bottom: 2%;
+
+    @include mq(medium) {
+      font-size: $font-size-medium;
+    }
   }
 
   &__description-left {
-    margin-left: 10px;
+    margin-left: 5%;
     text-align: left;
+    margin-bottom: 2%;
   }
 
   &__description-right {
-    margin-right: 10px;
+    margin-right: 5%;
     text-align: right;
   }
 
   &__picture {
     width: 270px;
-    height: 150px;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
+    @include mq(medium) {
+      width: 440px;
+    }
   }
 
   &__picture-left {
@@ -68,10 +82,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include mq(medium) {
+      height: 405px;
+    }
   }
 
   &__col-left {
     align-items: flex-start;
+
+    @include mq(medium) {
+      margin-top: 20px;
+    }
   }
   &__col-right {
     align-items: flex-end;

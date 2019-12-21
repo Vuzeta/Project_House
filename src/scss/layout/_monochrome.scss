@@ -15,6 +15,10 @@
     letter-spacing: -1px;
     line-height: $line-height-normal;
 
+    @include mq(medium) {
+      margin-top: 50px;
+      font-size: $font-size-XXLarge + 0.5em;
+    }
 
     &::after {
       content: '';
@@ -35,6 +39,11 @@
     font-size: $font-size-small;
     font-weight: $font-weight-light;
     line-height: 25px;
+
+    @include mq(medium) {
+      width: 60%;
+      font-size: $font-size-medium;
+    }
   }
 
   &__btn {
@@ -47,6 +56,12 @@
     border: 2px solid $color-blue-dark;
     border-radius: 50px;
     cursor: pointer;
+
+    @include mq(medium) {
+      width: 325px;
+      padding: 15px 42px;
+      font-size: $font-size-medium;
+    }
   }
 
   &__container {
@@ -58,7 +73,7 @@
 
     @include mq(medium) {
       height: 45vh;
-		}
+    }
   }
 
   &__pagination {
@@ -81,7 +96,7 @@
 
     @include mq(medium) {
       background-image: url('../assets/monochrome-picture-1_1280.jpg');
-		}
+    }
   }
 
   &__slide:nth-child(2) {
@@ -89,7 +104,7 @@
 
     @include mq(medium) {
       background-image: url('../assets/monochrome-picture-2_1280.jpg');
-		}
+    }
   }
 
   &__slide:nth-child(3) {
@@ -97,6 +112,6 @@
 
     @include mq(medium) {
       background-image: url('../assets/monochrome-picture-3_1280.jpg');
-		}
+    }
   }
 }

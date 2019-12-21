@@ -66,5 +66,9 @@
       margin-bottom: 200px;
       font-size: $font-size-medium-large;
     }
+
+    @include mq(xlarge) {
+      margin-bottom: 100px;
+    }
   }
 }

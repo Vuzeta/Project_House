@@ -4,6 +4,11 @@
   justify-content: space-between;
   align-items: center;
 
+  @include mq(xlarge) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   &__title {
     position: relative;
     top: 0;
@@ -19,6 +24,11 @@
       font-size: $font-size-XXLarge + 0.5em;
     }
 
+    @include mq(xlarge) {
+      width: 100%;
+      text-align: center;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -28,6 +38,10 @@
       width: 50%;
       height: 2px;
       background-color: $color-blue-dark;
+
+      @include mq(xlarge) {
+        width: 12%;
+      }
     }
   }
 
@@ -65,6 +79,10 @@
     @include mq(medium) {
       width: 440px;
     }
+
+    @include mq(xlarge) {
+      width: 90%;
+    }
   }
 
   &__picture-left {
@@ -86,6 +104,12 @@
     @include mq(medium) {
       height: 405px;
     }
+
+    @include mq(xlarge) {
+      margin-top: 80px;
+      width: 50%;
+      height: 100%;
+    }
   }
 
   &__col-left {
@@ -93,6 +117,10 @@
 
     @include mq(medium) {
       margin-top: 20px;
+    }
+
+    @include mq(xlarge) {
+      margin-top: 80px;
     }
   }
   &__col-right {

@@ -55,12 +55,40 @@
   }
 
   &__btn {
+    position: relative;
+    top: 0;
+    left: 0;
     color: $color-white;
     text-decoration: none;
     font-size: $font-size-medium-small;
     text-transform: uppercase;
     padding: 15px;
     border: 2px solid $color-white;
+    overflow: hidden;
+    transition: 0.3s ease-in;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -130%;
+      width: 117%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      transition: 0.3s ease-in;
+      z-index: -2;
+      transform: skewX(-20deg);
+    }
+
+    &:hover {
+      @include mq(xlarge) {
+        color: $color-blue-light;
+        &::before {
+          left: -10%;
+        }
+      }
+    }
 
     @include mq(medium) {
       margin-bottom: 200px;

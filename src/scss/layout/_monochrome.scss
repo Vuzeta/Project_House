@@ -18,6 +18,10 @@
     @include mq(xlarge) {
       height: 80%;
     }
+
+    @include mq(fullHD) {
+      height: 50%;
+    }
   }
 
   &__title {
@@ -145,6 +149,10 @@
     @include mq(medium) {
       background-image: url('../assets/monochrome-picture-1_1280.jpg');
     }
+
+    @include mq(fullHD) {
+      background-image: url('../assets/monochrome-picture-1_1920.jpg');
+    }
   }
 
   &__slide:nth-child(2) {
@@ -153,6 +161,9 @@
     @include mq(medium) {
       background-image: url('../assets/monochrome-picture-2_1280.jpg');
     }
+    @include mq(fullHD) {
+      background-image: url('../assets/monochrome-picture-2_1920.jpg');
+    }
   }
 
   &__slide:nth-child(3) {
@@ -160,6 +171,10 @@
 
     @include mq(medium) {
       background-image: url('../assets/monochrome-picture-3_1280.jpg');
+    }
+
+    @include mq(fullHD) {
+      background-image: url('../assets/monochrome-picture-3_1920.jpg');
     }
   }
 }

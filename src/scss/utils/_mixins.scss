@@ -17,6 +17,9 @@ $breakpoints: (
   xxlarge: (
     min-width: 1440px,
   ),
+  fullHD: (
+    min-width: 1920px,
+  ),
 );
 
 @mixin mq($breakpoint) {

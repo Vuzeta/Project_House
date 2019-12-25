@@ -8,6 +8,12 @@
     @include mq(xlarge) {
       height: 71%;
     }
+
+    @include mq(fullHD) {
+      height: 50%;
+      margin-top: 130px;
+      margin-left: 50px;
+    }
   }
 
   &__title-container {
@@ -130,6 +136,11 @@
       bottom: 0;
       left: 70%;
       transform: translateX(-50%);
+    }
+
+    @include mq(fullHD) {
+      width: 60%;
+      height: 510px;
     }
   }
 }

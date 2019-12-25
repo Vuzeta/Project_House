@@ -62,11 +62,19 @@
     margin-left: 5%;
     text-align: left;
     margin-bottom: 2%;
+
+    @include mq(fullHD) {
+      margin-left: 55%;
+    }
   }
 
   &__description-right {
     margin-right: 5%;
     text-align: right;
+
+    @include mq(fullHD) {
+      margin-right: 55%;
+    }
   }
 
   &__picture {
@@ -88,10 +96,25 @@
   &__picture-left {
     background-image: url('../assets/kitchen-left_640.jpg');
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+    @include mq(xlarge) {
+      background-image: url('../assets/kitchen-left_1280.jpg');
+    }
+
+    @include mq(fullHD) {
+      background-image: url('../assets/kitchen-left_1920.jpg');
+    }
   }
   &__picture-right {
     background-image: url('../assets/kitchen-right_640.jpg');
     box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.16);
+
+    @include mq(xlarge) {
+      background-image: url('../assets/kitchen-right_1280.jpg');
+    }
+    @include mq(fullHD) {
+      background-image: url('../assets/kitchen-right_1920.jpg');
+    }
   }
 
   &__col {
@@ -106,7 +129,7 @@
     }
 
     @include mq(xlarge) {
-      margin-top: 80px;
+      margin-top: 10%;
       width: 50%;
       height: 100%;
     }
@@ -120,7 +143,7 @@
     }
 
     @include mq(xlarge) {
-      margin-top: 80px;
+      margin-top: 10%;
     }
   }
   &__col-right {

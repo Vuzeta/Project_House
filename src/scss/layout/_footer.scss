@@ -52,6 +52,13 @@
     font-size: $font-size-medium-small;
     text-decoration: none;
     color: $color-gray-light;
+    transition: 0.2s linear;
+
+    &:hover {
+      @include mq(xlarge) {
+        color: $color-white;
+      }
+    }
 
     @include mq(medium) {
       font-size: $font-size-medium-large;

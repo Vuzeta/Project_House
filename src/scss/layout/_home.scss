@@ -59,6 +59,7 @@
     font-size: $font-size-medium;
     font-weight: $font-weight-light;
     line-height: 25px;
+    margin-left: 11%;
 
     @include mq(medium) {
       width: 310px;
